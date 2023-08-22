@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <header class="header">
+      <div class="logo">
+         <img src="./assets/Facebook_f_logo_(2019).svg.png" alt="logo satoru">
+      </div>
+      <nav>
+         <ul class="nav-links">
+            <li><a href="#">servicios</a></li>
+            <li><a href="#">proyectos</a></li>
+            <li><a href="#">about</a></li>
+         </ul>
+      </nav>
+      <a href="#" class="btn"><button>contacto</button></a>
+
+  
+
+      <a (click)="openNav()" href="#" class="menu"><button>menu</button></a>
+      <div class="overlay" [style.width]="mobileMenuWidth" id="mobile-menu">
+
+         <a  (click) ="closeNav()" class="close">&times;</a>
+         <div class="overlay-content">
+         <a href="#">servicios</a>
+         <a href="#">proyectos</a>
+         <a href="#">about</a>
+         <a href="#">Contacto</a>
+         </div>
+      </div>
+   </header>
+
+   
+</body>
+</html>
